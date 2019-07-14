@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Prática 08 - Exercício 01</title>
+		<link rel="stylesheet" href="pratica08exercicio01.css"/>
+	</head>
+	<body>
+		<script src="pratica08exercicio01.js"></script>
+		<div class="container">
+			<form name="f_form" method="post" action="">
+				<label class="rotulo">Login:</label> <input class="campo" name="f_login" size="40" maxlength="30"/><br/><br/><br/>
+				<label class="rotulo">E-mail:</label> <input class="campo" name="f_email" type="text" size="40" maxlength="30"/><br/><br/><br/>
+				<label class="rotulo">Data de Nascimento:</label> <input class="campo" name="f_nascimento" size="40" type="date"/><br/><br/><br/>
+				<label class="rotulo">Senha:</label> <input class="campo" name="f_senha" type="password" size="40" maxlength="20"/><br/><br/><br/>
+				<label class="rotulo">Confirmar senha:</label> <input class="campo" name="f_confSenha" type="password" size="40" maxlength="20"/><br/><br/><br/>
+
+				<label class="rotulo">Sexo:</label>
+				<select name="f_sexo"/>
+					<option value="selecione">Selecione</option>
+					<option value="masculino">Masculino</option>
+					<option value="feminino">Feminino</option>
+				</select><br/><br/><br/>
+
+				<label class="rotulo">Cidade:</label><input class="campo" name="f_cidade" size="40" maxlength="20"/><br/><br/><br/>
+
+				<label class="rotulo">Home-Page:</label><input class="campo" name="f_homePage" size="40" maxlength="30" placeholder="http://"/><br/><br/><br/>
+
+				<label class="rotulo">Interesses:</label>
+				<input class="checkIn" type="checkbox" name="f_musica" value="musica"/><label class="checkLb">Música</label>
+				<input type="checkbox" name="f_esporte" value="esporte"/><label class="checkLb">Esporte</label>
+				<input type="checkbox" name="f_moda" value="moda"/><label class="checkLb">Moda</label><br/><br/><br/><br/>
+
+				<input class="btn1" type="reset" value="Limpar"/><input class="btn2" type="submit" value="Cadastrar" onclick="return validar()"/>
+			</form>
+		</div>
+	</body>
+</html>
